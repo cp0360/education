@@ -5,12 +5,11 @@
 int dayOfWeek;
 String answer;
 
-Console.WriteLine("Введите день недели:");
-
 // Проверяем на корректность введенного дня недели.
 // Не даем выйти из цикла до тех пор, пока не будет указан корректный день недели.
 while (true)
 {
+    Console.WriteLine("Введите день недели:");
     dayOfWeek = int.Parse(Console.ReadLine()!);
 
     if (dayOfWeek >= 1 && dayOfWeek <= 7)
