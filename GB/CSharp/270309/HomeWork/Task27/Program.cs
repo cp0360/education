@@ -1,10 +1,8 @@
-// Задача 27: Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
-//452 -> 11
-//82 -> 10
-//9012 -> 12
+// Напишите программу, которая принимает на вход число и выдаёт сумму цифр в числе.
 
+Console.Clear();
 Console.WriteLine("Введите число:");
-int x = int.Parse(Console.ReadLine());
+int x = int.Parse(Console.ReadLine()!);
 int tmp = x;
 int xsum = 0;
 
@@ -14,5 +12,4 @@ while (tmp > 0)
   tmp /= 10;
 }
 
-Console.Clear();
 Console.WriteLine($"Сумма чисел числа {x} = {xsum}");
