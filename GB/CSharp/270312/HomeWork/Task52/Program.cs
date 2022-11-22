@@ -47,7 +47,7 @@ void PrintArray(int[,] arr)
 }
 
 
-System.Console.Write("Укажите размерность массива: ");
+Console.Write("Укажите размерность массива: ");
 int n = int.Parse(Console.ReadLine()!);
 int[,] array = GenerateArray(n);
 PrintArray(array);
